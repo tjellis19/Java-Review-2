@@ -9,22 +9,26 @@ package java_review2;
  *
  * @author tjell
  */
-public class Student {
+public class Student extends Person {
     //--------- Variables ---------\\
-    
+    final String FIRST_YEAR, SECOND_YEAR, THIRD_YEAR, FOURTH_YEAR;
     
     //--------- Constructor(s) ---------\\
     public Student()
     {
-        
+        FIRST_YEAR = "Freshman";
+        SECOND_YEAR = "Sophomore";
+        THIRD_YEAR = "Junior";
+        FOURTH_YEAR = "Senior";
     }
     //--------- Setters and Gettersv---------\\
     
     
     
     //--------- Additional Methods ---------\\
+    @Override
     public String toString()
     {
-       return " ";
+       return super.toString() + "\nStatus: " + THIRD_YEAR;
     }
 }// end of class
