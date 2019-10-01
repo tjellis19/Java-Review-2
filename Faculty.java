@@ -9,14 +9,15 @@ package java_review2;
  *
  * @author tjell
  */
-public class Faculty {
+public class Faculty extends Employee{
     //--------- Variables ---------\\
-    
+    String officeHours, rank;
     
     //--------- Constructor(s) ---------\\
     public Faculty()
     {
-        
+        officeHours = "1:00 - 3:00 MWF";
+        rank = "Part-time Professor";
     }
     //--------- Setters and Gettersv---------\\
     
@@ -25,6 +26,7 @@ public class Faculty {
     //--------- Additional Methods ---------\\
     public String toString()
     {
-       return " ";
+       return super.toString() + "\nOffice hours: " + officeHours 
+               + "\nRank: " + rank;
     }
 }// end of class
