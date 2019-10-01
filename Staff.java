@@ -9,22 +9,23 @@ package java_review2;
  *
  * @author tjell
  */
-public class Staff {
+public class Staff extends Employee{
     //--------- Variables ---------\\
-    
+    String title;
     
     //--------- Constructor(s) ---------\\
     public Staff()
     {
-        
+        title = "Advisor";
     }
     //--------- Setters and Gettersv---------\\
     
     
     
     //--------- Additional Methods ---------\\
+    @Override
     public String toString()
     {
-       return " ";
+       return super.toString() + "\nTitle: " + title;
     }
 }// end of class

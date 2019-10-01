@@ -18,7 +18,7 @@ public class Employee extends Person{
     //--------- Constructor(s) ---------\\
     public Employee()
     {
-        office = "";
+        office = "221 Soul Grove Building";
         salary = 133783;
         dateHired = new MyDate(1,2,2007);
     }
@@ -27,6 +27,7 @@ public class Employee extends Person{
     
     
     //--------- Additional Methods ---------\\
+    @Override
     public String toString()
     {
        return super.toString() + "\nOffice: " + office + "\nSalary: $" 

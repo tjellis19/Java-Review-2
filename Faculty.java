@@ -24,6 +24,7 @@ public class Faculty extends Employee{
     
     
     //--------- Additional Methods ---------\\
+    @Override
     public String toString()
     {
        return super.toString() + "\nOffice hours: " + officeHours 

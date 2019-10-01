@@ -21,6 +21,22 @@ public class Java_Review2 {
         
         System.out.println("Date 1:\n" + date1.toString());
         System.out.println("Date 2:\n" + date2.toString());
+        System.out.println("");
+        
+        Person p = new Person();
+        System.out.println("Person:\n" + p.toString() + "\n");
+        
+        Student s = new Student();
+        System.out.println("Student:\n" + s.toString() + "\n");
+        
+        Employee e = new Employee();
+        System.out.println("Employee:\n" + e.toString() + "\n");
+        
+        Faculty f = new Faculty();
+        System.out.println("Faculty:\n" + f.toString() + "\n");
+        
+        Staff st = new Staff();
+        System.out.println("Staff:\n" + st.toString() + "\n");
     }
     
 }
