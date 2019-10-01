@@ -11,12 +11,16 @@ package java_review2;
  */
 public class Person {
     //--------- Variables ---------\\
+    String name, address, phoneNumber, email;
     
     
     //--------- Constructor(s) ---------\\
     public Person()
     {
-        
+        name = "Steven Santos";
+        address = "97 Rose Street Medina, OH 44256";
+        phoneNumber = "(484) 906-6932";
+        email = "ssantos@gmail.com";
     }
     //--------- Setters and Gettersv---------\\
     
@@ -25,6 +29,7 @@ public class Person {
     //--------- Additional Methods ---------\\
     public String toString()
     {
-       return " ";
+       return "Name: " + name + "\nAddress: " + address + "\nPhone number: "
+               + phoneNumber + "\nEmail: " + email;
     }
 }// end of class
