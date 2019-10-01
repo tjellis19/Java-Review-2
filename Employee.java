@@ -9,14 +9,18 @@ package java_review2;
  *
  * @author tjell
  */
-public class Employee {
+public class Employee extends Person{
     //--------- Variables ---------\\
-    
+    String office;
+    int salary;
+    MyDate dateHired;
     
     //--------- Constructor(s) ---------\\
     public Employee()
     {
-        
+        office = "";
+        salary = 133783;
+        dateHired = new MyDate(1,2,2007);
     }
     //--------- Setters and Gettersv---------\\
     
@@ -25,6 +29,7 @@ public class Employee {
     //--------- Additional Methods ---------\\
     public String toString()
     {
-       return " ";
+       return super.toString() + "\nOffice: " + office + "\nSalary: $" 
+               + salary + "\nDate hired: " + dateHired.toString();
     }
 }// end of class

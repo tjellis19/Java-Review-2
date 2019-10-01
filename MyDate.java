@@ -126,7 +126,6 @@ public class MyDate {
     
     public String toString()
     {
-       return "month/day/year\n" +
-               month + "/" + day + "/" + year;
+       return month + "/" + day + "/" + year;
     }
 }// end of class
