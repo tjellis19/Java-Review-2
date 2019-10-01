@@ -11,20 +11,56 @@ package java_review2;
  */
 public class MyDate {
     //--------- Variables ---------\\
-    
+    int year, month, day;
     
     //--------- Constructor(s) ---------\\
     public MyDate()
     {
-        
+        this.day = 30;
+        this.month = 8;
+        this.year = 2019;
     }
-    //--------- Setters and Gettersv---------\\
+    public MyDate(long milliseconds)
+    {
+        this.day = 1;
+        this.month = 0;
+        this.year = 1970;
+        setDate(milliseconds);
+    }
+    public MyDate(int d, int m, int y)
+    {
+     this.day = d;
+     this.month = m;
+     this.year = y;
+    }
     
+    
+    //--------- Setters and Gettersv---------\\
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public int getDay() {
+        return day;
+    }
     
     
     //--------- Additional Methods ---------\\
+    public void setDate(long elaspedTime)
+    {
+        
+    }
+    
+    
+    
     public String toString()
     {
-       return " ";
+       return "month/day/year\n" +
+               month + "/" + day + "/" + year;
     }
 }// end of class
