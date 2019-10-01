@@ -53,7 +53,73 @@ public class MyDate {
     //--------- Additional Methods ---------\\
     public void setDate(long elaspedTime)
     {
-        
+        for(long i = elaspedTime; i > 86400000L; i++)
+        {
+           i = Math.subtractExact(i, 86400000L);
+           day++;
+           if (month == 0 && day > 31)
+           {
+               month = 1;
+               day = 1;
+           }
+           else if(month == 1 && day > 28)
+           {
+               month = 2;
+               day = 1;
+           }
+           else if(month == 2 && day > 31)
+           {
+               month = 3;
+               day = 1;
+           }
+           else if(month == 3 && day > 30)
+           {
+               month = 4;
+               day = 1;
+           }
+           else if(month == 4 && day > 31)
+           {
+               month = 5;
+               day = 1;
+           }
+           else if(month == 5 && day > 30)
+           {
+               month = 6;
+               day = 1;
+           }
+           else if(month == 6 && day > 31)
+           {
+               month = 7;
+               day = 1;
+           }
+           else if(month == 7 && day > 31)
+           {
+               month = 8;
+               day = 1;
+           }
+           else if(month == 8 && day > 30)
+           {
+               month = 9;
+               day = 1;
+           }
+           else if(month == 9 && day > 31)
+           {
+               month = 10;
+               day = 1;
+           }
+           else if(month == 10 && day > 30)
+           {
+               month = 11;
+               day = 1;
+           }
+           else if(month == 11 && day > 31)
+           {
+               month = 0;
+               day = 1;
+               year++;
+           }
+           i--;
+        }
     }
     
     

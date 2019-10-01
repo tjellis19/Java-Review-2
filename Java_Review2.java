@@ -16,7 +16,11 @@ public class Java_Review2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        MyDate date1 = new MyDate();
+        MyDate date2 = new MyDate(34355555133101L);
         
+        System.out.println("Date 1:\n" + date1.toString());
+        System.out.println("Date 2:\n" + date2.toString());
     }
     
 }
